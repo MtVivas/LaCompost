@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vinculación de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Oi&display=swap" rel="stylesheet">
+    <title>La Compostera</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!-- ENCABEZADO DE PAGINA -->
+<header>
+    <a href="#" class="logo">
+        <img class="logo-img" src="img/logo.webp" alt="logo de la compañia">
+        <h2 class="logo-nombre">La Compostera</h2>
+    </a>
+
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="nav-1">
+        <a class="nav-link" href="#quienes-somos">¿Quiénes Somos?</a>
+        <a class="nav-link" href="#productos">Productos</a>
+        <a class="nav-link" href="#eventos">Eventos</a>
+        <a class="nav-link" href="#galeria">Galería</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+    </nav>        
+</header>
+
+<!-- CONTENIDO DE PAGINA -->
+<main class="contenido-pagina">
+    <section id="quienes-somos" class="seccion">
+        <h2 class="oi-regular">¿Quiénes Somos?</h2>
+        <p class="lemon-regular">Somos un despacho de comida vegana casera, nos especializamos en ofrecer platillos saludables y llenos de sabor, elaborados con ingredientes frescos y naturales.</p>
+        <img src="img/quienes-somos.jpg" alt="¿Quiénes Somos?" class="imagen-seccion">
+    </section>
+
+    <section id="productos" class="seccion">
+        <h2 class="oi-regular">Productos</h2>
+        <div class="productos-lista">
+            <div class="producto">
+                <img src="img/menu-dia.webp" alt="Menú del Día">
+                <p class="lemon-regular">Menú del Día</p>
+                <p class="precio lemon-regular">$9500</p>
+            </div>
+            <div class="producto">
+                <img src="img/hamburguesa.webp" alt="Hamburguesa Vegana">
+                <p class="lemon-regular">Hamburguesa Vegana</p>
+                <p class="precio lemon-regular">$8000</p>
+            </div>
+            <div class="producto">
+                <img src="img/limonada.webp" alt="Limonada Natural">
+                <p class="lemon-regular">Limonada Natural</p>
+                <p class="precio lemon-regular">$2500</p>
+            </div>
+            <div class="producto">
+                <img src="img/empanada.jpg" alt="Empanada Vegana">
+                <p class="lemon-regular">Empanada Vegana</p>
+                <p class="precio lemon-regular">$3000</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="eventos" class="seccion">
+        <h2 class="oi-regular">Eventos</h2>
+        <p class="lemon-regular">Participamos en eventos locales para promover la comida vegana y saludable. Mantente al tanto de nuestras próximas actividades.</p>
+        <p class="lemon-regular">El 2024 realizamos un homenaje a la obra de Luis, con un menú exclusivo en honor a su legado artístico. No te pierdas esta actividad que combina gastronomía y arte.</p>
+        <img src="img/evento-luis.webp" alt="Homenaje a la obra de Luis" class="imagen-seccion">
+    </section>
+    
+    <section id="galeria" class="seccion">
+        <h2 class="oi-regular">Galería</h2>
+        <div class="galeria">
+            <img src="img/galeria1.jpg" alt="Galería 1">
+            <img src="img/galeria2.webp" alt="Galería 2">
+            <img src="img/galeria3.jpg" alt="Galería 3">
+        </div>
+    </section>
+
+    <section id="contacto" class="formulario">
+        <form class="form" action="Link" method="POST" target="_blank">
+            <h2 class="form__title oi-regular">Formulario de Contacto</h2>
+            <p class="form__subtitle lemon-regular">Envíanos tu consulta y te contactaremos a la brevedad.</p>
+            <div class="form__inputs">
+                <label class="form__label">
+                    <input type="text" placeholder=" " class="form__input">
+                    <span class="form__text lemon-regular">Ingresa tu Nombre</span>
+                </label>
+                <label class="form__label">
+                    <input type="mail" placeholder=" " class="form__input">
+                    <span class="form__text lemon-regular">Ingresa tu Correo</span>
+                </label>
+                <label class="form__label">
+                    <textarea placeholder=" " class="form__input" name="consulta" id="" cols="10" rows="5"></textarea>
+                    <span class="form__text lemon-regular">Ingresa tu Consulta</span>
+                </label>
+            </div>
+            <input type="submit" value="Enviar" class="form__submit">
+        </form>
+    </section>
+</main>
+
+<!-- PIE DE PAGINA -->
+<footer class="pie-pagina">
+    <div class="footer">
+        <ul class="social-icon">
+            <li class="icon-elem">
+                <a class="icon" href="https://www.instagram.com/la_compostera/" target="_blank">
+                    <img class="social-icon-img" src="img/instagram-logo.webp" alt="Instagram">
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a class="icon" href="https://wa.me/2215624971" target="_blank">
+                    <img class="social-icon-img" src="img/whatsapp-logo.webp" alt="WhatsApp">
+                </a>
+            </li>
+        </ul>
+        <span class="lemon-regular">&copy; 2020 - 2024, Todos los derechos reservados.</span>
+        <div class="ubicacion">
+            <a href="https://www.google.com/maps/place/La+Compostera/@-34.921646,-57.942782,15z/data=!4m6!3m5!1s0x95a2e623d84542c5:0x303309091bf4bbd0!8m2!3d-34.921646!4d-57.942782!16s%2Fg%2F11bw4m6tjz?entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                <img src="img/mapa.png" class="ubicacion-logo" alt="Ubicación">
+                Nuestra Ubicación
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

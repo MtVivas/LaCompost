@@ -1,0 +1,279 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif, Verdana, Tahoma;
+    background-color: #f1f1f1; /* Fondo marfil */
+    color: #800000; /* Texto en color burdeos */
+    box-sizing: border-box; /* Configura el modo caja */
+}
+
+* {
+    box-sizing: inherit;
+}
+
+/* Fuentes personalizadas */
+.oi-regular {
+    font-family: "Oi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lemon-regular {
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 2px solid #800000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo-img {
+    max-height: 60px;
+    margin-right: 10px;
+}
+
+.nav-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #800000; /* Texto en color burdeos */
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #800000; /* Borde burdeos */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #800000; /* Fondo burdeos */
+    color: #fff;
+}
+
+/* Secciones */
+.seccion {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #800000; /* Borde burdeos */
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center; /* Centrado del texto */
+}
+
+.seccion h2 {
+    font-size: 2rem;
+    font-family: "Oi", serif; /* Usamos la fuente Oi */
+}
+
+.seccion p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Lemon", serif; /* Usamos la fuente Lemon */
+}
+
+/* Productos */
+.productos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.producto {
+    flex: 1 1 calc(25% - 20px); /* 4 columnas en pantallas grandes */
+    border: 2px solid #800000; /* Borde de los productos */
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    text-align: center; /* Centrado de los productos */
+}
+
+.producto img {
+    max-width: 100%; /* Asegura que las imágenes no se agranden */
+    height: auto; /* Mantiene las proporciones originales */
+    border-radius: 10px;
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
+.precio {
+    font-weight: bold;
+    color: #800000; /* Precios en color burdeos */
+    font-size: 1.2rem;
+    font-family: "Oi", serif; /* Fuente Oi para los precios */
+}
+
+/* Galería */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img {
+    max-width: 100%; /* Asegura que las imágenes no se agranden */
+    height: auto; /* Mantiene las proporciones originales */
+    width: calc(33.333% - 20px); /* Tres imágenes por fila */
+    border-radius: 10px;
+    object-fit: cover; /* Mantiene la imagen centrada dentro de su contenedor */
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    border-top: 2px solid #800000; /* Borde burdeos */
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-elem img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #800000; /* Borde burdeos en los íconos */
+}
+
+footer span {
+    display: block;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #800000; /* Color burdeos en el texto */
+}
+
+footer a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #800000; /* Color burdeos en los enlaces */
+    font-size: 1rem;
+}
+
+/* Ubicación */
+.ubicacion-logo {
+    margin-top: 20px;
+    width: 40px;  /* Tamaño del logo de ubicación */
+    height: 40px;
+    display: inline-block;
+}
+
+/* Formulario */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form__title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #800000; /* Título en color burdeos */
+}
+
+.form__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #800000; /* Borde burdeos en los campos de entrada */
+    border-radius: 5px;
+}
+
+.form__text {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #800000; /* Color burdeos para el texto */
+    pointer-events: none;
+}
+
+.form__submit {
+    padding: 10px;
+    background-color: #800000; /* Fondo burdeos en el botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form__submit:hover {
+    background-color: #555;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 1024px) {
+    .productos-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        flex: 1 1 90%; /* Una columna en pantallas pequeñas */
+        max-width: 400px;
+    }
+
+    .nav-1 {
+        flex-direction: column;
+    }
+
+    .galeria img {
+        width: calc(50% - 20px); /* Dos imágenes por fila en pantallas más pequeñas */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-1 {
+        flex-direction: column;
+    }
+
+    .productos-lista {
+        flex-direction: column;
+    }
+
+    .form__inputs {
+        width: 100%;
+    }
+
+    .galeria img {
+        width: 100%; /* Una imagen por fila en pantallas muy pequeñas */
+    }
+}
