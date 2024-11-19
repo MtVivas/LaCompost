@@ -9,7 +9,7 @@ body {
 
 * {
     box-sizing: inherit;
-}
+} 
 
 /* Fuentes personalizadas */
 .oi-regular {
@@ -36,7 +36,14 @@ header {
     border-bottom: 2px solid #800000;
     background: linear-gradient(to right, #800000, #f1f1f1);
 }
-
+/* Header */
+.logo-nombre {
+    font-family: "Lemon", serif;
+    font-size: 3rem; /* Incremento del tamaño */
+    color: black;
+    text-align: center;
+    margin: 0 auto; /* Centrado */
+}
 .logo {
     display: flex;
     align-items: center;
@@ -164,7 +171,6 @@ section.formulario .form {
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background: linear-gradient(to right, #800000, #f1f1f1); /* Mismo degradado */
     border: 2px solid #800000;
     border-radius: 10px;
     color: #fff;
