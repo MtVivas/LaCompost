@@ -34,6 +34,7 @@ header {
     padding: 10px;
     background-color: #fff;
     border-bottom: 2px solid #800000;
+    background: linear-gradient(to right, #800000, #f1f1f1);
 }
 
 .logo {
@@ -67,6 +68,12 @@ header {
 .nav-link:hover {
     background-color: #800000; /* Fondo burdeos */
     color: #fff;
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Opcional */
 }
 
 /* Secciones */
@@ -138,6 +145,20 @@ header {
     border-radius: 10px;
     object-fit: cover; /* Mantiene la imagen centrada dentro de su contenedor */
 }
+/*Reseñas
+.reseñas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.reseña {
+    border: 1px solid #800000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+} */
 
 /* Footer */
 footer {
@@ -146,6 +167,7 @@ footer {
     margin-top: 30px;
     text-align: center;
     border-top: 2px solid #800000; /* Borde burdeos */
+    background: linear-gradient(to right, #800000, #f1f1f1);
 }
 
 .social-icon {
