@@ -16,8 +16,11 @@
 <header>
     <a href="#" class="logo">
         <img class="logo-img" src="img/logo.webp" alt="logo de la compañia">
-        <h2 class="logo-nombre">La Compostera</h2>
+        <h2 class="logo-nombre" style="color: black;">La Compostera</h2> <!-- Título en negro -->
     </a>
+</header>
+    </header>
+    
 
     <!-- BARRA DE NAVEGACION -->
     <nav class="nav-1">
@@ -99,26 +102,31 @@
     </section>-->
 
     <section id="contacto" class="formulario">
-        <form class="form" action="Link" method="POST" target="_blank">
+        <form
+        action="https://formspree.io/f/xjkvovww"
+        method="POST"
+        class="form"
+        >
             <h2 class="form__title oi-regular">Formulario de Contacto</h2>
             <p class="form__subtitle lemon-regular">Envíanos tu consulta y te contactaremos a la brevedad.</p>
             <div class="form__inputs">
                 <label class="form__label">
-                    <span class="form__text lemon-regular">Ingresa tu Nombre</span>
-                    <input type="text" class="form__input" required>
+                    <span class="form__text lemon-regular">Nombre:</span>
+                    <input type="text" name="name" class="form__input" required>
                 </label>
                 <label class="form__label">
-                    <span class="form__text lemon-regular">Ingresa tu Correo</span>
-                    <input type="email" class="form__input" required>
+                    <span class="form__text lemon-regular">Correo Electrónico:</span>
+                    <input type="email" name="email" class="form__input" required>
                 </label>
                 <label class="form__label">
-                    <span class="form__text lemon-regular">Ingresa tu Consulta</span>
-                    <textarea class="form__input" name="consulta" rows="5" required></textarea>
+                    <span class="form__text lemon-regular">Mensaje:</span>
+                    <textarea name="message" class="form__input" rows="5" required></textarea>
                 </label>
             </div>
-            <input type="submit" value="Enviar" class="form__submit">
+            <button type="submit" class="form__submit">Enviar</button>
         </form>
     </section>
+    
 </main>
 
 <!-- PIE DE PAGINA -->

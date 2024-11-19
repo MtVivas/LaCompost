@@ -85,7 +85,6 @@ header {
     background-color: #fff;
     text-align: center; /* Centrado del texto */
 }
-
 .seccion h2 {
     font-size: 2rem;
     font-family: "Oi", serif; /* Usamos la fuente Oi */
@@ -159,7 +158,39 @@ header {
     border-radius: 10px;
     background-color: #fff;
 } */
+section.formulario .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, #800000, #f1f1f1); /* Mismo degradado */
+    border: 2px solid #800000;
+    border-radius: 10px;
+    color: #fff;
+}
 
+section.formulario .form__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+section.formulario .form__label {
+    font-size: 1rem;
+    color: #fff;
+}
+
+section.formulario .form__input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
 /* Footer */
 footer {
     background-color: #fff;
