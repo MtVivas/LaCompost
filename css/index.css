@@ -103,14 +103,14 @@ header {
 /* Productos */
 .productos-lista {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 productos por fila */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 0;
     list-style: none;
+    justify-items: center;
 }
-
 .producto {
-    max-width: 350px; /* Limitar el tamaño máximo de las tarjetas */
+    max-width: 350px;
     border: 2px solid #800000;
     border-radius: 10px;
     padding: 15px;
@@ -129,31 +129,29 @@ header {
     font-size: 1.2rem;
     font-family: "Oi", serif;
 }
-
 /* Responsivo para dispositivos pequeños */
 @media (max-width: 768px) {
     .productos-lista {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-columns: 1fr;
     }
     .producto {
         max-width: 100%;
     }
 }
-
 /* Ajustes intermedios para tablets o pantallas de tamaño medio */
 @media screen and (max-width: 1024px) {
     .productos-lista {
-        grid-template-columns: repeat(2, 1fr); /* 2 productos por fila en tablets */
+        grid-template-columns: repeat(2, 1fr);
     }
     .producto {
-        max-width: 100%; /* Asegurarse de que el tamaño se ajuste en pantallas intermedias */
+        max-width: 100%;
     }
 }
 /* Estilo para los botones de agregar e información */
 .button {
     padding: 10px 20px;
     margin: 5px;
-    background-color: #4CAF50; /* Verde oliva */
+    background-color: #808000; 
     color: white;
     border: none;
     cursor: pointer;
@@ -161,11 +159,9 @@ header {
     font-size: 16px;
     transition: background-color 0.3s, color 0.3s;
 }
-
 .button:hover {
-    background-color: #45a049;
+    background-color: #808000;
 }
-
 /* Estilo para los botones de vaciar carrito y verificar compra */
 .vaciar-compra, .verificar-compra {
     font-family: "Lemon", sans-serif;
@@ -178,9 +174,8 @@ header {
     border-radius: 10px;
     background-color: #fff;
 }
-
 .vaciar-compra button, .verificar-compra button {
-    background-color: #4CAF50; /* Verde oliva */
+    background-color: #808000;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -189,23 +184,19 @@ header {
     font-size: 1rem;
     transition: background-color 0.3s, color 0.3s;
 }
-
 .vaciar-compra button:hover, .verificar-compra button:hover {
-    background-color: #45a049;
+    background-color: #808000;
 }
-
 /* Asegurarse de que los botones estén visibles */
 #btnMas, #btnMenos {
     display: inline-block;
 }
-
 /* Estilo para la descripción */
 .description {
     margin-top: 10px;
     font-size: 14px;
     color: #666;
 }
-
 /* Ajustes para los botones de información */
 #btnMasInfo, #btnMenosInfo {
     padding: 8px 16px;
@@ -219,7 +210,6 @@ header {
     justify-content: center;
     gap: 20px;
 }
-
 .galeria img {
     max-width: 100%;
     height: auto;
@@ -325,11 +315,10 @@ footer a {
     color: #800000; 
     font-size: 1rem;
 }
-
 /* Responsivo */
 @media (max-width: 768px) {
     .productos-lista {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-columns: 1fr;
     }
     .producto {
         max-width: 100%;
@@ -346,10 +335,10 @@ footer a {
 }
 @media screen and (max-width: 1024px) {
     .productos-lista {
-        grid-template-columns: repeat(2, 1fr); /* 2 productos por fila en tablets */
+        grid-template-columns: repeat(2, 1fr);
     }
     .producto {
-        max-width: 100%; /* Asegurarse de que el tamaño se ajuste en pantallas intermedias */
+        max-width: 100%;
     }
     .nav-1 {
         flex-direction: column;
