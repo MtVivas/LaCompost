@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Menú del Día",
+        "price": "$9500",
+        "description": "Un plato balanceado y delicioso de aproximadamente 450g, que siempre incluye cereal, legumbres, vegetales cocidos y crudos, acompañado de nuestra suave mayonesa de hortalizas y brotes frescos.",
+        "image": "img/menu-dia.webp"
+    },
+    {
+        "id": 2,
+        "name": "Hamburguesa Vegana",
+        "price": "$8000",
+        "description": "Elaborada con pan de masa madre y leche de coco, preparado artesanalmente en casa. Se completa con nuestra mayonesa de hortalizas, un medallón de legumbres, tomate, hojas verdes frescas y pepinos encurtidos. Un sabor único y saludable en cada bocado.",
+        "image": "img/hamburguesa.webp"
+    },
+    {
+        "id": 3,
+        "name": "Limonada Natural",
+        "price": "$2500",
+        "description": "Refrescante y revitalizante, hecha con jugo natural de limón, azúcar mascabo, un toque de jengibre y menta fresca, todo combinado con agua pura para una bebida 100% natural.",
+        "image": "img/limonada.webp"
+    },
+    {
+        "id": 4,
+        "name": "Empanada Vegana",
+        "price": "$3000",
+        "description": "Con una masa que contiene un 10% de harina integral y una fermentación natural de 24 horas. Su relleno incluye queso de girasol, tomates asados, albahaca fresca y cebollas caramelizadas.",
+        "image": "img/empanada.jpg"
+    }
+]

@@ -1,29 +1,25 @@
 /* General */
 body {
     margin: 0;
-    font-family: Arial, sans-serif, Verdana, Tahoma;
-    background-color: #f1f1f1; /* Fondo marfil */
-    color: #800000; /* Texto en color burdeos */
-    box-sizing: border-box; /* Configura el modo caja */
+    font-family: 'Lemon', sans-serif;
+    background-color: #f1f1f1;
+    color: #800000;
+    box-sizing: border-box;
 }
-
 * {
     box-sizing: inherit;
 } 
-
 /* Fuentes personalizadas */
 .oi-regular {
     font-family: "Oi", serif;
     font-weight: 400;
     font-style: normal;
 }
-
 .lemon-regular {
     font-family: "Lemon", serif;
     font-weight: 400;
     font-style: normal;
 }
-
 /* Header */
 header {
     display: flex;
@@ -39,22 +35,20 @@ header {
 /* Header */
 .logo-nombre {
     font-family: "Lemon", serif;
-    font-size: 3rem; /* Incremento del tamaño */
+    font-size: 3rem;
     color: black;
     text-align: center;
-    margin: 0 auto; /* Centrado */
+    margin: 0 auto;
 }
 .logo {
     display: flex;
     align-items: center;
     margin-right: auto;
 }
-
 .logo-img {
-    max-height: 60px;
-    margin-right: 10px;
+    max-height: 200px;
+    margin-right: 200px;
 }
-
 .nav-1 {
     display: flex;
     flex-wrap: wrap;
@@ -62,80 +56,162 @@ header {
     gap: 15px;
     margin-left: auto;
 }
-
 .nav-link {
-    color: #800000; /* Texto en color burdeos */
+    color: #800000;
     text-decoration: none;
     padding: 10px 15px;
-    border: 1px solid #800000; /* Borde burdeos */
+    border: 1px solid #800000;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
-
 .nav-link:hover {
-    background-color: #800000; /* Fondo burdeos */
+    background-color: #800000;
     color: #fff;
 }
-
 .imagen-contenedor img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Opcional */
+    border-radius: 10px;
 }
-
 /* Secciones */
 .seccion {
     margin: 20px 0;
     padding: 20px;
-    border: 2px solid #800000; /* Borde burdeos */
+    border: 2px solid #800000;
     border-radius: 10px;
     background-color: #fff;
-    text-align: center; /* Centrado del texto */
+    text-align: center;
 }
 .seccion h2 {
     font-size: 2rem;
-    font-family: "Oi", serif; /* Usamos la fuente Oi */
+    font-family: "Oi", serif;
 }
-
 .seccion p {
     font-size: 1rem;
     line-height: 1.5;
-    font-family: "Lemon", serif; /* Usamos la fuente Lemon */
+    font-family: "Lemon", serif;
 }
-
+/* Estilo para el ícono del carrito en la barra de navegación */
+.carrito-icono {
+    width: 40px; 
+    height: 40px; 
+    object-fit: contain; 
+}
+.nav-1 a img {
+    margin: 0;
+}
 /* Productos */
 .productos-lista {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 productos por fila */
     gap: 20px;
     padding: 0;
     list-style: none;
 }
 
 .producto {
-    flex: 1 1 calc(25% - 20px); /* 4 columnas en pantallas grandes */
-    border: 2px solid #800000; /* Borde de los productos */
+    max-width: 350px; /* Limitar el tamaño máximo de las tarjetas */
+    border: 2px solid #800000;
     border-radius: 10px;
     padding: 15px;
     background-color: #fff;
-    text-align: center; /* Centrado de los productos */
+    text-align: center;
 }
-
 .producto img {
-    max-width: 100%; /* Asegura que las imágenes no se agranden */
-    height: auto; /* Mantiene las proporciones originales */
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+    object-fit: cover;
 }
-
 .precio {
     font-weight: bold;
-    color: #800000; /* Precios en color burdeos */
+    color: #800000;
     font-size: 1.2rem;
-    font-family: "Oi", serif; /* Fuente Oi para los precios */
+    font-family: "Oi", serif;
 }
 
+/* Responsivo para dispositivos pequeños */
+@media (max-width: 768px) {
+    .productos-lista {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+    .producto {
+        max-width: 100%;
+    }
+}
+
+/* Ajustes intermedios para tablets o pantallas de tamaño medio */
+@media screen and (max-width: 1024px) {
+    .productos-lista {
+        grid-template-columns: repeat(2, 1fr); /* 2 productos por fila en tablets */
+    }
+    .producto {
+        max-width: 100%; /* Asegurarse de que el tamaño se ajuste en pantallas intermedias */
+    }
+}
+/* Estilo para los botones de agregar e información */
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50; /* Verde oliva */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para los botones de vaciar carrito y verificar compra */
+.vaciar-compra, .verificar-compra {
+    font-family: "Lemon", sans-serif;
+    font-size: 1rem;
+    color: #800000;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid #800000;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.vaciar-compra button, .verificar-compra button {
+    background-color: #4CAF50; /* Verde oliva */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.vaciar-compra button:hover, .verificar-compra button:hover {
+    background-color: #45a049;
+}
+
+/* Asegurarse de que los botones estén visibles */
+#btnMas, #btnMenos {
+    display: inline-block;
+}
+
+/* Estilo para la descripción */
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Ajustes para los botones de información */
+#btnMasInfo, #btnMenosInfo {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 10px;
+}
 /* Galería */
 .galeria {
     display: flex;
@@ -145,96 +221,12 @@ header {
 }
 
 .galeria img {
-    max-width: 100%; /* Asegura que las imágenes no se agranden */
-    height: auto; /* Mantiene las proporciones originales */
-    width: calc(33.333% - 20px); /* Tres imágenes por fila */
+    max-width: 100%;
+    height: auto;
+    width: calc(33.333% - 20px);
     border-radius: 10px;
-    object-fit: cover; /* Mantiene la imagen centrada dentro de su contenedor */
+    object-fit: cover;
 }
-/*Reseñas
-.reseñas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    text-align: center;
-}
-
-.reseña {
-    border: 1px solid #800000;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #fff;
-} */
-section.formulario .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    border: 2px solid #800000;
-    border-radius: 10px;
-    color: #fff;
-}
-
-section.formulario .form__inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    max-width: 500px;
-}
-
-section.formulario .form__label {
-    font-size: 1rem;
-    color: #fff;
-}
-
-section.formulario .form__input {
-    padding: 10px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #333;
-}
-/* Footer */
-footer {
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 30px;
-    text-align: center;
-    border-top: 2px solid #800000; /* Borde burdeos */
-    background: linear-gradient(to right, #800000, #f1f1f1);
-}
-
-.social-icon {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.icon-elem img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid #800000; /* Borde burdeos en los íconos */
-}
-
-footer span {
-    display: block;
-    margin-top: 15px;
-    font-size: 1rem;
-    color: #800000; /* Color burdeos en el texto */
-}
-
-footer a {
-    display: block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #800000; /* Color burdeos en los enlaces */
-    font-size: 1rem;
-}
-
 /* FORMULARIO */
 section.formulario .form {
     display: flex;
@@ -246,27 +238,24 @@ section.formulario .form {
     border: 2px solid #800000;
     border-radius: 10px;
 }
-
 section.formulario .form__title {
     font-size: 1.5rem;
     text-align: center;
     color: #800000;
 }
-
 section.formulario .form__inputs {
     display: flex;
     flex-direction: column;
     gap: 15px;
     width: 100%;
-    max-width: 500px; /* Limita el ancho en dispositivos grandes */
+    max-width: 500px;
 }
-
 section.formulario .form__label {
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-bottom: 10px;
 }
-
 section.formulario .form__input {
     padding: 10px;
     font-size: 1rem;
@@ -274,18 +263,15 @@ section.formulario .form__input {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
-
 section.formulario .form__input:focus {
     outline: none;
     border-color: #555;
 }
-
 section.formulario .form__text {
     font-size: 0.9rem;
     color: #800000;
     margin-bottom: 5px;
 }
-
 section.formulario .form__submit {
     padding: 10px 20px;
     background-color: #800000;
@@ -296,11 +282,9 @@ section.formulario .form__submit {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 section.formulario .form__submit:hover {
     background-color: #555;
 }
-
 /* LOGO DE UBICACIÓN */
 .ubicacion-logo {
     width: 40px;
@@ -308,49 +292,69 @@ section.formulario .form__submit:hover {
     margin-top: 20px;
     object-fit: contain;
 }
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    border-top: 2px solid #800000;
+    background: linear-gradient(to right, #800000, #f1f1f1);
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.icon-elem img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #800000;
+}
+footer span {
+    display: block;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #800000; 
+}
+footer a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #800000; 
+    font-size: 1rem;
+}
 
-/* RESPONSIVE */
+/* Responsivo */
 @media (max-width: 768px) {
-    section.formulario .form__inputs {
-        width: 90%;
-    }
-}
-
-/* Ajustes para pantallas pequeñas */
-@media screen and (max-width: 1024px) {
     .productos-lista {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     }
-
     .producto {
-        flex: 1 1 90%; /* Una columna en pantallas pequeñas */
-        max-width: 400px;
+        max-width: 100%;
     }
-
     .nav-1 {
         flex-direction: column;
     }
-
-    .galeria img {
-        width: calc(50% - 20px); /* Dos imágenes por fila en pantallas más pequeñas */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .nav-1 {
-        flex-direction: column;
-    }
-
-    .productos-lista {
-        flex-direction: column;
-    }
-
     section.formulario .form__inputs {
         width: 100%;
     }
-
     .galeria img {
-        width: 100%; /* Una imagen por fila en pantallas muy pequeñas */
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .productos-lista {
+        grid-template-columns: repeat(2, 1fr); /* 2 productos por fila en tablets */
+    }
+    .producto {
+        max-width: 100%; /* Asegurarse de que el tamaño se ajuste en pantallas intermedias */
+    }
+    .nav-1 {
+        flex-direction: column;
+    }
+    .galeria img {
+        width: calc(50% - 20px);
     }
 }
